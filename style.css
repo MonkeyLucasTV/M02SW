@@ -1,0 +1,27 @@
+form {
+
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+
+    justify-content:center;
+    align-items:center;
+
+
+}
+
+input{
+
+    width: 400px;
+    height: 25px;
+}
+button{
+    width: 70px;
+    height: 25px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
