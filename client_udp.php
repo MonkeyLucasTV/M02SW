@@ -7,7 +7,7 @@ if($type_requete == "POST")
 	$sock = socket_create (AF_INET, SOCK_DGRAM, 0 );//
     if($sock!=null)
     {   echo '<p>Creation de la socket : OK</p>';
-        echo '<p>Socket créée : '.$sock.'</p>';
+       // print_r($sock);
 		$trameEnttec=array();
 		$trameEnttec[0]=0x41;$trameEnttec[1]=0x72;$trameEnttec[2]=0x74;$trameEnttec[3]=0x2d;
 		$trameEnttec[4]=0x4e;$trameEnttec[5]=0x65;$trameEnttec[6]=0x74;$trameEnttec[7]=0x00;

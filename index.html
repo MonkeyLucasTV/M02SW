@@ -9,13 +9,35 @@
 </head>
 <body>
     <script src="main.js" type="text/javascript"></script>
+    <script src="test.js" type="text/javascript"></script>
 
-    <form id="formtram" action="POST" method="client_udp.php">
-        <h1>Envoyer une trame :</h1>
-        <input type="edit" id="edit">
-        <br>
-        <button onclick="Ecrire()">Envoyer</button>
-    </form>
-    
+
+    <header>
+        <h1>Envoie d'un message dans la boite de nuit</h1>
+
+    </header>
+
+    <section>
+        <p>Voici l'outil permettant d'envoyer des trames au spots lumineux, les trame de constituent en 2 caractere hexadecimal pour chaque canal:</p>
+
+
+        <div id="classet">
+            <div id="form">
+                <h1>Envoyer une trame :</h1>
+                <input type="text" id="edit">
+                <br>
+                <button onclick="Ecrire()" onmouseover="Mon_popup()">Envoyer</button>
+        </div>
+        </div>
+
+     
+
+    </section>
+
+
+    <footer>
+        <h1> Dev par Lucas</h1>
+    </footer>
+
 </body>
 </html>
