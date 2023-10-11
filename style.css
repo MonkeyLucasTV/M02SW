@@ -31,7 +31,11 @@ header h1{
 
 }
 
+<<<<<<< HEAD
 #form {
+=======
+form {
+>>>>>>> 390c0d4f2f8b131c4f25aee903c9150a93df68fb
     border: 2px solid black;
     display: flex;
     flex-direction: column;
