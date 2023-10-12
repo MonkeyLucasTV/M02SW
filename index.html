@@ -8,8 +8,8 @@
     <title>Site nul</title>
 </head>
 <body>
-    <script src="main.js" type="text/javascript"></script>
-    <script src="test.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript" defer></script>
+    <script src="test.js" type="text/javascript" defer></script>
 
 
     <header>
@@ -20,13 +20,23 @@
     <section>
         <p>Voici l'outil permettant d'envoyer des trames au spots lumineux, les trame de constituent en 2 caractere hexadecimal pour chaque canal:</p>
 
+        <div id="thescrolls">
+            <input type="range" min="0" max="255" id="scrollbar1" class="scrollbar" value="200">
+
+        </div>
 
         <div id="classet">
+            
+
+
+
             <div id="form">
                 <h1>Envoyer une trame :</h1>
-                <input type="text" id="edit">
+                <input type="text" id="edit" oninput="TrameValide()">
                 <br>
-                <button onclick="Ecrire()" onmouseover="Mon_popup()">Envoyer</button>
+                <button id="boutton" onclick="Ecrire()">Envoyer</button>
+                <span id= "longueur" class="vert"> Longueur </span>
+                <span id= "hexa" class="vert"> Hexadécimal </span>
         </div>
         </div>
 
@@ -39,36 +49,5 @@
         <h1> Dev par Lucas</h1>
     </footer>
 
-<<<<<<< HEAD
-=======
-
-    <header>
-        <h1>Envoie d'un message dans la boite de nuit</h1>
-
-    </header>
-
-    <section>
-        <p>Voici l'outil permettant d'envoyer des trames au spots lumineux, les trame de constituent en 2 caractere hexadecimal pour chaque canal:</p>
-
-
-        <div id="classet">
-            <form id="formtram" action="POST" method="client_udp.php">
-                <h1>Envoyer une trame :</h1>
-                <input type="edit" id="edit">
-                <br>
-                <button onclick="Ecrire()">Envoyer</button>
-            </form>
-        </div>
-
-     
-
-    </section>
-
-
-    <footer>
-        <h1> Dev par Lucas</h1>
-    </footer>
-
->>>>>>> 390c0d4f2f8b131c4f25aee903c9150a93df68fb
 </body>
 </html>
