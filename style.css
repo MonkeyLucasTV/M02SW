@@ -21,7 +21,7 @@ header h1{
 
 #classet {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
     align-items:center;
     margin-top: 70px;
@@ -31,7 +31,7 @@ header h1{
 
 }
 
-form {
+#form {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -68,12 +68,19 @@ h1 {
 }
 
 
-section p {
+section p{
     padding-top: 20px;
     padding-left: 50px;
     text-align: left;
     font-size: 19px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px ;
 }
 
 header{
@@ -115,4 +122,20 @@ footer h1{
     text-align: center;
     color: rgb(36, 36, 36);
 
+}
+
+.scrollbar{
+
+    -webkit-appearance: slider-vertical;
+    height: 125px;
+    width: 50px;
+}
+
+
+.vert {
+    color: green;
+}
+
+.rouge {
+    color: red;
 }
