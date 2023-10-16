@@ -127,7 +127,8 @@ footer h1{
 .scrollbar{
 
     -webkit-appearance: slider-vertical;
-    height: 100px;
+    height: 125px;
+    width: 50px;
 }
 
 
