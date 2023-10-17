@@ -69,6 +69,7 @@ function recupCanal(){
 }
 
 
+<<<<<<< HEAD
 function Sc1(){
     var s1 = document.getElementById("scrollbar1");
 
@@ -93,6 +94,31 @@ function Sc1(){
 function Sc2(){
 var s2 = document.getElementById("scrollbar2");
 
+=======
+
+var s1 = document.getElementById("scrollbar1");
+s1.addEventListener('change', function () {
+    var CanalDepart = recupCanal();
+    var trameHexa = document.getElementById("edit");
+    var trame = trameHexa.value;
+    console.log({trame:trame})
+    var entier = Math.abs(Number(s1.value)).toString(16).toUpperCase();
+    console.log({entier:entier});
+    const numeroCanal = CanalDepart + 1;
+    if (s1.value<16) entier= "0"+ entier;
+    var indice=(numeroCanal-1)*2;
+    console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
+    trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
+    document.getElementById("edit").value= trame;
+    Ecrire();
+
+    
+
+}, false);
+
+var s2 = document.getElementById("scrollbar2");
+s2.addEventListener('change', function () {
+>>>>>>> 9ae412f3f03bb5f027550ef2b8fa2c350e942e4e
     var CanalDepart = recupCanal();
     var trameHexa = document.getElementById("edit");
     var trame = trameHexa.value;
@@ -106,6 +132,7 @@ var s2 = document.getElementById("scrollbar2");
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
     Ecrire();
+<<<<<<< HEAD
 
 }
 
@@ -113,6 +140,13 @@ var s2 = document.getElementById("scrollbar2");
 function Sc3(){
 var s3 = document.getElementById("scrollbar3");
 
+=======
+}, false);
+
+
+var s3 = document.getElementById("scrollbar3");
+s3.addEventListener('change', function () {
+>>>>>>> 9ae412f3f03bb5f027550ef2b8fa2c350e942e4e
     var CanalDepart = recupCanal();
     var trameHexa = document.getElementById("edit");
     var trame = trameHexa.value;
@@ -126,11 +160,18 @@ var s3 = document.getElementById("scrollbar3");
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
     Ecrire();
+<<<<<<< HEAD
 }
 
 
 function Sc4(){
 var s4 = document.getElementById("scrollbar4");
+=======
+}, false);
+
+var s4 = document.getElementById("scrollbar4");
+s4.addEventListener('change', function () {
+>>>>>>> 9ae412f3f03bb5f027550ef2b8fa2c350e942e4e
     var CanalDepart = recupCanal();
     var trameHexa = document.getElementById("edit");
     var trame = trameHexa.value;
@@ -144,11 +185,18 @@ var s4 = document.getElementById("scrollbar4");
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
     Ecrire();
+<<<<<<< HEAD
 }
 
 
 function Sc5(){
     var s5 = document.getElementById("scrollbar5");
+=======
+}, false);
+
+var s5 = document.getElementById("scrollbar5");
+s5.addEventListener('change', function () {
+>>>>>>> 9ae412f3f03bb5f027550ef2b8fa2c350e942e4e
     var CanalDepart = recupCanal();
     var trameHexa = document.getElementById("edit");
     var trame = trameHexa.value;
@@ -162,10 +210,17 @@ function Sc5(){
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
     Ecrire();
+<<<<<<< HEAD
 }
 
 function Sc6(){
     var s6 = document.getElementById("scrollbar6");
+=======
+}, false);
+
+var s6 = document.getElementById("scrollbar6");
+s6.addEventListener('change', function () {
+>>>>>>> 9ae412f3f03bb5f027550ef2b8fa2c350e942e4e
     var CanalDepart = recupCanal();
     var trameHexa = document.getElementById("edit");
     var trame = trameHexa.value;
@@ -181,6 +236,7 @@ function Sc6(){
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
     Ecrire();
+<<<<<<< HEAD
 }
 
 function Scall(){
@@ -210,6 +266,7 @@ function FullOff(){
     Scall()
 
 }
+<<<<<<< HEAD
 
 
 function Alea(){
@@ -222,3 +279,15 @@ function Alea(){
 }
 
 
+=======
+=======
+}, false);
+
+
+function FullOn(){
+    document.getElementsByClassName("scrollbar").value = "255";
+    console.log('test');
+
+}
+>>>>>>> 9ae412f3f03bb5f027550ef2b8fa2c350e942e4e
+>>>>>>> 74b4290d842cb710c965d183ebf5d5e0677299cd
