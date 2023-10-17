@@ -183,35 +183,42 @@ function Sc6(){
     Ecrire();
 }
 
+function Scall(){
+    Sc1()
+    Sc2()
+    Sc3()
+    Sc4()
+    Sc5()
+    Sc6()
+} 
 
 function FullOn(){
-    document.getElementById("scrollbar1").value = "255";
-    document.getElementById("scrollbar2").value = "255";
-    document.getElementById("scrollbar3").value = "255";
-    document.getElementById("scrollbar4").value = "255";
-    document.getElementById("scrollbar5").value = "255";
-    document.getElementById("scrollbar6").value = "255";
-    Sc1();
-    Sc2();
-    Sc3();
-    Sc4();
-    Sc5();
-    Sc6();
+    var scrollbar = document.getElementsByClassName('scrollbar');
 
+    for (var i = 0; i < scrollbar.length; i++) {
+      scrollbar[i].value = 255;
+    }
+    Scall()
 }
 
 function FullOff(){
-    document.getElementById("scrollbar1").value = "0";
-    document.getElementById("scrollbar2").value = "0";
-    document.getElementById("scrollbar3").value = "0";
-    document.getElementById("scrollbar4").value = "0";
-    document.getElementById("scrollbar5").value = "0";
-    document.getElementById("scrollbar6").value = "0";
-    Sc1();
-    Sc2();
-    Sc3();
-    Sc4();
-    Sc5();
-    Sc6();
+    var scrollbar = document.getElementsByClassName('scrollbar');
+
+    for (var i = 0; i < scrollbar.length; i++) {
+      scrollbar[i].value = 0;
+    }
+    Scall()
 
 }
+
+
+function Alea(){
+    var scrollbar = document.getElementsByClassName('scrollbar');
+
+    for (var i = 0; i < scrollbar.length; i++) {
+      scrollbar[i].value = Math.floor(Math.random() * 256);
+    }
+    Scall()
+}
+
+
