@@ -1,0 +1,114 @@
+body{ 
+    display: grid;
+    grid-template-areas: 'entete entete'
+                         'section aside';
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 250px 1fr;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+h1{
+    font-weight: lighter;
+    color: rgb(65, 65, 65);
+}
+
+
+header{
+    grid-area: entete;
+    border-bottom: 1px dotted black;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+section{
+    grid-area: section;
+
+    
+
+
+}
+
+aside{
+    grid-area: aside;
+    border-left: 1px dotted black;
+    padding-left: 20px;
+}
+
+aside li {
+    color: gray;
+}
+
+
+aside h1{
+    margin-bottom: 50px;
+}
+
+li {
+    list-style-type: "- ";
+}
+
+
+
+video {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 50px;
+    
+}
+
+#manuel{
+    display: ;
+    top: 0; 
+    right: 0;
+    position: absolute;
+    text-align: center;
+    margin-top: 40px ;
+    margin-right: 20%;
+    padding-bottom: 0;
+}
+
+#manuel p{
+    margin-top: 0;
+    color: black;
+
+}
+#manuel img{
+    width: 50%;
+}
+
+#imgexemple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#imgprojecteur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#imgexemple img{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+#videopres {
+    margin-top: 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+

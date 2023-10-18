@@ -1,0 +1,141 @@
+body {
+    margin: 0px 0px 0px 0px;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "tete"
+                         "principale" 
+                         "pied";                         
+    grid-template-rows: 100px minmax(600px, auto) auto;
+    grid-template-columns: 100%;
+    background-color: rgb(231, 231, 216);
+    height: 100%;
+   }
+
+
+header h1{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#classet {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    
+
+
+}
+
+#form {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    margin: 20px 0px 20px 0px;
+    background-color:  rgb(226, 226, 199);
+    
+}
+
+
+input{
+
+    width: 400px;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color:  rgb(211, 211, 163);
+}
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color:  rgb(211, 211, 163);
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+
+section p{
+    padding-top: 20px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px ;
+}
+
+header{
+    grid-area: tete;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #FF715B;
+
+}
+
+footer{
+    grid-area: pied;
+    background-color: #FF715B;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+section{
+    grid-area: principale;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 200px;
+}
+
+
+
+
+footer h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgb(36, 36, 36);
+
+}
+
+.scrollbar{
+
+    -webkit-appearance: slider-vertical;
+    height: 125px;
+    width: 50px;
+}
+
+
+.vert {
+    color: green;
+}
+
+.rouge {
+    color: red;
+}
