@@ -27,6 +27,7 @@ header{
 
 section{
     grid-area: section;
+    padding-right: 20px;
 
     
 
@@ -63,14 +64,10 @@ video {
 }
 
 #manuel{
-    display: ;
-    top: 0; 
+    width: 110px;
+    position:static;
     right: 0;
-    position: absolute;
-    text-align: center;
-    margin-top: 40px ;
-    margin-right: 20%;
-    padding-bottom: 0;
+    display: block;
 }
 
 #manuel p{
@@ -80,10 +77,12 @@ video {
 }
 #manuel img{
     width: 50%;
+    right: 0;
 }
 
 #imgexemple{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     
@@ -104,11 +103,22 @@ video {
 }
 
 
-#videopres {
-    margin-top: 30px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+#videopres{
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    left: 0;
+}
+video{
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    left: 0;
+    margin-right: 50px;
+
 }
 
+#text {
+    width:fit-content;
+}
