@@ -13,6 +13,14 @@ console.log("La somme fait : " + val1 + val2);
     alert("Gestion de l'evenement 'mouse over' sur mon bouton");
 }
 */
+
+
+
+
+
+
+
+
 function TrameValide() {
     var trameHexa = document.getElementById("edit");
     var trame = trameHexa.value;
@@ -84,7 +92,7 @@ function Sc1(){
         console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
         trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
         document.getElementById("edit").value= trame;
-        Ecrire();
+        AES_encryptage();
     
         
 }
@@ -105,7 +113,7 @@ var s2 = document.getElementById("scrollbar2");
     console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
-    Ecrire();
+    AES_encryptage();
 
 }
 
@@ -125,7 +133,7 @@ var s3 = document.getElementById("scrollbar3");
     console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
-    Ecrire();
+    AES_encryptage();
 }
 
 
@@ -143,7 +151,7 @@ var s4 = document.getElementById("scrollbar4");
     console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
-    Ecrire();
+    AES_encryptage();
 }
 
 
@@ -161,7 +169,7 @@ function Sc5(){
     console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
-    Ecrire();
+    AES_encryptage();
 }
 
 function Sc6(){
@@ -180,7 +188,7 @@ function Sc6(){
     console.log(trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length)+ " AYAYAYAYA")
     trame=trame.substring(0,indice)+entier+trame.substring(indice+2,trame.length);
     document.getElementById("edit").value= trame;
-    Ecrire();
+    AES_encryptage();
 
 }
 

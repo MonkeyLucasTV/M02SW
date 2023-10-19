@@ -64,10 +64,15 @@ video {
 }
 
 #manuel{
+    float: right;
+    top: 0;
     width: 110px;
     position:static;
     right: 0;
     display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 5%;
 }
 
 #manuel p{
@@ -76,7 +81,7 @@ video {
 
 }
 #manuel img{
-    width: 50%;
+    width: 50px;
     right: 0;
 }
 
@@ -122,3 +127,4 @@ video{
 #text {
     width:fit-content;
 }
+

@@ -2,41 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <label id="AEStext">nil</label>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Site nul</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <script src="main.js" type="text/javascript" defer></script>
     <script src="test.js" type="text/javascript" defer></script>
+    <script src="main.js" type="text/javascript" defer></script>
+    
 
 
     <header>
-        <h1>Envoie d'un message dans la boite de nuit</h1>
+        <h1>Console Dmx 6 canaux</h1>
 
     </header>
 
-    <section>
-        <p>Voici l'outil permettant d'envoyer des trames au spots lumineux, les trame de constituent en 2 caractere hexadecimal pour chaque canal:</p>
+    <nav id="barre_nav">
+        <span id="span_accueil">Accueil</span>
+        <span id="span_pilotage">Pilotage</span>
+        <span id="span_connexion">Connexion</span>
+        <span id="span_inscription">Inscription</span>
 
+    </nav>
+
+    <section>
        
+       
+        <div id="de">
+            <p>Adresse :</p>
+            <p>Univers:</p>
+        </div>
+
+        <div id="deb">
+               
+                <br>
+                <input type="text" id="adresse" value="1">
+
+                
+                <input type="text" id="univers" value="0">
+            </div>
 
         <div id="classet">
             
 
 
 
-            <div id="form">
                 
-                <h1>Envoyer une trame :</h1>
-                <input type="text" id="edit" placeholder="Trame en hexadécimal" oninput="TrameValide()">
-                <input type="text" name="canal" id="canal" placeholder="Numéro de canal"  oninput="recupCanal()">
-                <br>
+                
+        <div id="test">
                
-                <span id= "longueur" class="vert"> Longueur </span>
-                <span id= "hexa" class="vert"> Hexadécimal </span>
-                <div id="thescrolls">
+                 <div id="thescrolls">
 
                     <input type="range" min="0" max="255" id="scrollbar1" onchange="Sc1()" class="scrollbar" value="200">
                     <input type="range" min="0" max="255" id="scrollbar2" onchange="Sc2()" class="scrollbar" value="200">
@@ -47,19 +64,27 @@
 
 
                 </div>
+
+                <div id="autre">
                 <button id="On" onclick="FullOn()"> Full On </button>
                 <button id="Off" onclick="FullOff()"> Full Off </button>
-                <button id="boutton" onclick="Ecrire()">Envoyer</button>
-        </div>
-        </div>
-
-     
-
+          
+            <input type="text" id="edit" readOnly="readOnly" placeholder="Trame en hexadécimal" oninput="TrameValide()">
+            <input type="text" name="canal" id="canal" placeholder="Numéro de canal"  oninput="recupCanal()">
+            <span id= "longueur" class="vert"> Longueur </span>
+                <span id= "hexa" class="vert"> Hexadécimal </span>
+       </div>
+    </div>
+    
     </section>
 
 
     <footer>
-        <h1> Dev par Lucas le meilleur</h1>
+        <div id="M0">
+            <p id="M01"><a href="../M01/index.html" style="text-decoration:none">M01</a></p>
+            <p id="M01"><a href="../M02SW/index.html" style="text-decoration:none">M02</a></p>
+            <p id="M01"><a href="../M03/index.html" style="text-decoration:none">M03</a></p>
+        </div>
     </footer>
 
 </body>

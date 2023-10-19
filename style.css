@@ -3,19 +3,33 @@ body {
     display: grid;
     width: 100%;
     grid-template-areas: "tete"
+                         "nav"
                          "principale" 
                          "pied";                         
-    grid-template-rows: 100px minmax(600px, auto) auto;
+    grid-template-rows: 125px 70px minmax(600px, auto) auto;
     grid-template-columns: 100%;
-    background-color: rgb(231, 231, 216);
     height: 100%;
    }
 
+
+
+nav{
+    grid-area: nav;
+    background-color:rgb(240,195,78);
+    border: 1px solid white;
+vertical-align:middle;
+}
+
+header, section{
+    background-color: 	rgb(81,111,137);
+}
 
 header h1{
     margin-top: 50px;
     font-size: 40px;
     text-align: center;
+    vertical-align: middle;
+    margin-top: 35px;
 
 }
 
@@ -63,8 +77,11 @@ button{
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
+}
+
+#AEStext{
+    display: none;
 }
 
 
@@ -73,7 +90,6 @@ section p{
     padding-left: 50px;
     text-align: left;
     font-size: 19px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 span {
@@ -85,12 +101,7 @@ span {
 
 header{
     grid-area: tete;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 15%;
-    background-color: #FF715B;
 
 }
 
@@ -110,19 +121,13 @@ section{
     grid-area: principale;
     width: 100%;
     padding-top: 50px;
-    margin-bottom: 200px;
 }
 
 
-
-
-footer h1{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: rgb(36, 36, 36);
-
+a {
+    color: black;
 }
+
 
 .scrollbar{
 
@@ -133,9 +138,111 @@ footer h1{
 
 
 .vert {
-    color: green;
+    color: rgb(0, 50, 0);
 }
 
 .rouge {
-    color: red;
+    color: rgb(82, 0, 0);
+}
+
+
+#M0{
+
+    display: flex;
+    position: relative;
+}
+
+#M0 p{
+    margin-left: 25%;
+}
+
+#barre_nav{
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr;
+    place-items: center;
+    padding-left: 20px;
+    grid-template-areas: 'accueil pilot connect inscrit';
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+#barre_nav > span {
+    padding: 25px 10px;
+    margin-top: 0;
+   
+}
+
+#span_accueil{
+    grid-area: accueil;
+}
+#span_pilotage{
+    grid-area: pilot;
+}
+#span_connexion{
+    grid-area: connect;
+}
+#span_inscription{
+    grid-area: inscrit;
+}
+
+#barre_nav span{
+    width: 100%;
+    text-align: center;
+} 
+
+#barre_nav span:hover{
+    background-color: gray;
+    border-right: 1px solid black;
+}
+
+#thescrolls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#thescrolls input{
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 200px;
+    width: 30px;
+}
+
+#deb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+    
+}
+#de {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#deb input{
+    width: 150px;
+    margin-right: 20px;
+}
+
+#autre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#test{
+    display: flex;
+    flex-direction: column;
+}
+
+#canal{
+    display: none;
 }
